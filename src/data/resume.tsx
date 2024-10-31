@@ -16,11 +16,12 @@ export const DATA = {
     "React",
     "Javascript",
     "Tailwind Css",
-    "MySql"
+    "MySql",
+    "Figma"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/blog", icon: NotebookIcon, label: "Medium" },
   ],
   contact: {
     email: "beyzarslan865@gmail.com",
@@ -49,15 +50,8 @@ export const DATA = {
       },
       Email: {
         name: "Email",
-        url: "#",
+        url: "mailto:beyzarslan865@gmail.com",
         icon: Icons.email,
-        navbar: true,
-      },
-      email: {
-        name: "Send Email",
-        url: "#beyzarslan865@gmail.com",
-        icon: Icons.email,
-
         navbar: true,
       },
     },
@@ -208,13 +202,13 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/beyzarslann/DunyaninYediHarikasi",
+          href: "https://github.com/beyzarslann/my-portfolio",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/website.jpg",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
   ],
   hackathons: [

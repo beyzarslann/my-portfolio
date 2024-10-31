@@ -9,8 +9,46 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import SparklesText from "@/components/magicui/sparkles-text";
+import Particles from "@/components/ui/particles";
+import { BorderBeam } from "@/components/ui/border-beam";
+import { CoolMode } from "@/components/ui/cool-mode";
+import { Button } from "@/components/ui/button";
+import ShimmerButton from "@/components/ui/shimmer-button";
 
 const BLUR_FADE_DELAY = 0.04;
+
+const certificates = [
+  {
+    title: "Turkcell Geleceği Yazanlar - React 101 eğitimi başarı belgesi",
+    date: "Aralık 2023",
+    link: "/react101.jpg",
+  },
+  {
+    title: "BTK Akademi - Angular ile Web Programlama Katılım Sertifikası",
+    date: "Kasım 2023",
+    link: "/angular.jpg",
+  },
+  {
+    title: "BTK Akademi - Git ve Github Eğitimi Katılım Sertifikası",
+    date: "Ekim 2023",
+    link: "/git-github.jpg",
+  },
+  {
+    title: "Archi's Academy - Java Spring Boot Workshop",
+    date: "Eylül 2023",
+    link: "/java-springboot.jpg",
+  },
+  {
+    title: "Kodluyoruz - Hi-Kod Front End Atölyesi",
+    date: "Mayıs 2023",
+    link: "/hikod.png",
+  },
+  {
+    title: "Cumhuriyet Üniversitesi - Java ile Oyun Programlama Hackhatonu",
+    date: "Ocak 2023",
+    link: "/hackhathon.jpeg",
+  },
+];
 
 export default function Page() {
   return (
@@ -26,8 +64,8 @@ export default function Page() {
                 text={`Merhaba, Ben ${DATA.name.split(" ")[0]} `}
               />
               <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.description}
-          </Markdown>
+                {DATA.description}
+              </Markdown>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-40 border rounded-xl object-cover">
@@ -38,6 +76,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <section id="about" className="mb-40">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">Hakkımda</h2>
@@ -48,6 +87,7 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
+
       <section id="work" className="mb-40">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -71,7 +111,8 @@ export default function Page() {
             </BlurFade>
           ))}
         </div>
-      </section> 
+      </section>
+
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -95,6 +136,7 @@ export default function Page() {
           ))}
         </div>
       </section>
+
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -108,8 +150,8 @@ export default function Page() {
             ))}
           </div>
         </div>
-              
-      </section> 
+      </section>
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -118,7 +160,6 @@ export default function Page() {
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   Projelerim
                 </div>
-                
               </div>
             </div>
           </BlurFade>
@@ -143,75 +184,58 @@ export default function Page() {
             ))}
           </div>
         </div>
-      </section> 
-      {/* <section id="hackathons">
+      </section>
+
+      {/* Sertifikalarım Bölümü */}
+      <section id="certificates">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Hackathons
+                  Sertifikalarım
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
-                </p>
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
-          </BlurFade>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-[800px] mx-auto">
+            {certificates.map((certificate, index) => (
+              <BlurFade key={index} delay={BLUR_FADE_DELAY * (12 + index)}>
+                <div className="relative p-4 bg-background border rounded-lg shadow-md min-h-[200px]">
+                  <h3 className="mt-4 text-lg font-semibold">
+                    {certificate.title}
+                  </h3>
+                  <p className="mt-4 text-sm text-gray-500">
+                    {certificate.date}
+                  </p>
+                  <a
+                    href={certificate.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 text-blue-300 hover:underline"
+                  >
+                    Sertifikayı görmek için tıklayın
+                  </a>
+                  <BorderBeam />
+                </div>
+              </BlurFade>
+            ))}
+          </div>
         </div>
-      </section> */}
-      {/* <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
+      </section>
+
+      <section id="contact" className="py-12">
+        <div className="relative justify-center">
+          <a href="/cv.jpg" target="_blank" rel="noopener noreferrer">
+            <ShimmerButton className="shadow-2xl">
+              <div className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                CV'imi Görüntülemek İçin Tıkla !
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
-              </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
-              </p>
-            </div>
-          </BlurFade>
+            </ShimmerButton>
+          </a>
         </div>
-      </section>*/}
+      </section>
     </main>
   );
 }
