@@ -12,6 +12,7 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
+
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
@@ -55,6 +56,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
@@ -71,3 +74,4 @@ export default function RootLayout({
     </html>
   );
 }
+

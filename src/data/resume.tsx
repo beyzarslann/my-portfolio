@@ -21,7 +21,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Medium" },
+    // { href: "/blog", icon: NotebookIcon, label: "Medium" },
   ],
   contact: {
     email: "beyzarslan865@gmail.com",
