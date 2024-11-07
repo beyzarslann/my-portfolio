@@ -178,7 +178,7 @@ export const DATA = {
     },
     {
       title: "My Portfolio",
-      href: "https://automatic.chat",
+      href: "https://www.beyzarslan.com.tr/",
       dates: "Eylül 2024 - Ekim 2024",
       active: true,
       description:
