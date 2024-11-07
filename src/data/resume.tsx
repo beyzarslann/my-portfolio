@@ -197,7 +197,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://www.beyzarslan.com.tr/",
           icon: <Icons.globe className="size-3" />,
         },
         {
