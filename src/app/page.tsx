@@ -230,7 +230,7 @@ export default function Page() {
           <a href="/cv.jpg" target="_blank" rel="noopener noreferrer">
             <ShimmerButton className="shadow-2xl">
               <div className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
-                CV'imi Görüntülemek İçin Tıkla !
+                CV mi Görüntülemek İçin Tıkla !
               </div>
             </ShimmerButton>
           </a>
