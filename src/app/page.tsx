@@ -19,6 +19,12 @@ const BLUR_FADE_DELAY = 0.04;
 
 const certificates = [
   {
+    title:
+      "Ticar@ Yazılım Akademisi ve İstihdam Merkezi E-Devlet Onaylı Başarı Sertifikası",
+    date: "Aralık 2024",
+    link: "/ticaretakademi.jpg",
+  },
+  {
     title: "Turkcell Geleceği Yazanlar - React 101 eğitimi başarı belgesi",
     date: "Aralık 2023",
     link: "/react101.jpg",
