@@ -12,13 +12,7 @@ export const DATA = {
   summary:
     "Ankara'da yaşıyorum. Cumhuriyet Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum.",
   avatarUrl: "/me.jpeg",
-  skills: [
-    "React",
-    "Javascript",
-    "Tailwind Css",
-    "MySql",
-    "Figma"
-  ],
+  skills: ["React", "Javascript", "Tailwind Css", "MySql", "Figma"],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     // { href: "/blog", icon: NotebookIcon, label: "Medium" },
@@ -100,15 +94,11 @@ export const DATA = {
     {
       title: "Hava Durumu",
       href: "https://the-weather-woad.vercel.app/",
-      dates:"",
+      dates: "",
       active: true,
       description:
         "Bu hava durumu uygulaması, JavaScript kullanılarak geliştirilmiş ve OpenWeatherMap API entegrasyonu yapılmış bir web uygulamasını temsil eder. Kullanıcıların seçtikleri şehirler için güncel hava durumu bilgilerini görüntülemelerine olanak tanır. Uygulama, hava durumu bilgilerini API üzerinden çeker ve kullanıcıya sunar.",
-      technologies: [
-        "Html",
-        "Css",
-        "Javascript"
-      ],
+      technologies: ["Html", "Css", "Javascript"],
       links: [
         {
           type: "Website",
@@ -122,20 +112,16 @@ export const DATA = {
         },
       ],
       image: "/havadurumu.JPG",
-      video:
-        "",
+      video: "",
     },
     {
       title: "Alman Usulu Projesi",
       href: "https://alman-usulu-projesi-end.vercel.app/",
       dates: "",
       active: true,
-      description:"Kullanıcılardan isim ve harcama bilgilerini alıp ortalama ve toplam hesabı hesaplayıp kişi başına düşen hesabın dolar ve tl cinsinden hesaplamasını yapan bir uygulama.",
-      technologies: [
-        "Java",
-        "Spring Boot",
-        "Angular"
-      ],
+      description:
+        "Kullanıcılardan isim ve harcama bilgilerini alıp ortalama ve toplam hesabı hesaplayıp kişi başına düşen hesabın dolar ve tl cinsinden hesaplamasını yapan bir uygulama.",
+      technologies: ["Java", "Spring Boot", "Angular"],
       links: [
         {
           type: "Website",
@@ -152,15 +138,35 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Rick and Morty Api",
+      href: "https://vercel.com/beyzarslanns-projects/rick-and-morty-api",
+      dates: "",
+      active: true,
+      description:
+        "Rick and Morty API projesi, karakterlerin listelendiği bir tabloyu içeren bir uygulamadır. React kullanılarak geliştirilmiş olup, API'den gerçek zamanlı veri çekimi ve tabloda pagination özellikleri barındırmaktadır.",
+      technologies: ["React", "Javascript"],
+      links: [
+        {
+          type: "Website",
+          href: "https://rick-and-morty-api-three-beta.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/beyzarslann/rick-and-morty-api",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/rick.jpeg",
+      video: "",
+    },
+    {
       title: "Dunyanin Yedi Harikasi",
       href: "https://dunyanin-yedi-harikasi.vercel.app/",
       dates: "",
       active: true,
-      description:"Html ve Css ile kodlanmış bir websitesi.",
-      technologies: [
-        "Html",
-        "CSS"
-      ],
+      description: "Html ve Css ile kodlanmış bir websitesi.",
+      technologies: ["Html", "CSS"],
       links: [
         {
           type: "Website",
@@ -181,8 +187,7 @@ export const DATA = {
       href: "https://www.beyzarslan.com.tr/",
       dates: "Eylül 2024 - Ekim 2024",
       active: true,
-      description:
-        "",
+      description: "",
       technologies: [
         "Next.js",
         "Typescript",
@@ -207,9 +212,7 @@ export const DATA = {
         },
       ],
       image: "/website.jpg",
-      video:
-        "",
+      video: "",
     },
-  ]
-  
+  ],
 } as const;
