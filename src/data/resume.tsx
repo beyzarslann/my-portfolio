@@ -8,11 +8,11 @@ export const DATA = {
   location: "Ankara, Türkiye",
   locationLink: "",
   description:
-    "Junior Front-End geliştiriciyim. React, Javascript ile projeler geliştirmeyi seviyorum ve hala da kendimi geliştirmeye devam ediyorum. ",
+    "Junior Web Developer olarak projeler geliştirmeyi seviyorum ve kendimi sürekli geliştirmeye devam ediyorum.",
   summary:
     "Ankara'da yaşıyorum. Cumhuriyet Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum.",
   avatarUrl: "/me.jpeg",
-  skills: ["React", "Javascript", "Tailwind Css", "MySql", "Figma"],
+  skills: ["Java", "Spring Boot", "Javascript", "React", "Sql", "Figma"],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     // { href: "/blog", icon: NotebookIcon, label: "Medium" },
