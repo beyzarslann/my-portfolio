@@ -19,6 +19,11 @@ const BLUR_FADE_DELAY = 0.04;
 
 const certificates = [
   {
+    title: "Beltek - Java Spring Boot Programlama Başarı Belgesi",
+    date: "Haziran 2026",
+    link: "/beltek-java.jpeg",
+  },
+  {
     title:
       "Ticar@ Yazılım Akademisi ve İstihdam Merkezi E-Devlet Onaylı Başarı Sertifikası",
     date: "Aralık 2024",

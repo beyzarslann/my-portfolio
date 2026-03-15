@@ -92,26 +92,39 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Hava Durumu",
-      href: "https://the-weather-woad.vercel.app/",
+      title: "Öğrenci Bilgi Sistemi",
+      href: "https://github.com/beyzarslann/ogrenci-bilgi-sistemi",
       dates: "",
       active: true,
       description:
-        "Bu hava durumu uygulaması, JavaScript kullanılarak geliştirilmiş ve OpenWeatherMap API entegrasyonu yapılmış bir web uygulamasını temsil eder. Kullanıcıların seçtikleri şehirler için güncel hava durumu bilgilerini görüntülemelerine olanak tanır. Uygulama, hava durumu bilgilerini API üzerinden çeker ve kullanıcıya sunar.",
-      technologies: ["Html", "Css", "Javascript"],
+        "Bu proje, öğrencilerin kayıt işlemlerinin yönetildiği basit bir web uygulamasıdır. Sistem; öğrenci ekleme, listeleme, güncelleme ve ad,soyad,email,bölüm gibi temel bilgileri görüntüleme özelliklerine sahiptir.",
+      technologies: ["Java", "Spring Boot", "React", "Bootstrap", "Mysql"],
       links: [
         {
-          type: "Website",
-          href: "https://the-weather-woad.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/beyzarslann/TheWeather",
+          href: "https://github.com/beyzarslann/ogrenci-bilgi-sistemi",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/havadurumu.JPG",
+      image: "/obs1.png",
+      video: "",
+    },
+    {
+      title: "Kuaför Randevu Sistemi",
+      href: "https://github.com/beyzarslann/KuaforRandevuSistemi",
+      dates: "",
+      active: true,
+      description:
+        "Bu sistem; müşterilerin kuaför randevusu almasını, kuaförlerin ise randevularını yönetmesini sağlayan bir web platformudur. Kullanıcılar sisteme kayıt olarak uygun zaman dilimlerinde randevu oluşturabilir, mevcut randevularını görüntüleyebilir ve yönetebilir.",
+      technologies: ["Java", "Spring Boot", "React", "Tailwind Css", "Mysql"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/beyzarslann/KuaforRandevuSistemi",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/krs.png",
       video: "",
     },
     {
@@ -124,11 +137,6 @@ export const DATA = {
       technologies: ["Java", "Spring Boot", "Angular"],
       links: [
         {
-          type: "Website",
-          href: "https://alman-usulu-projesi-end.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
           href: "https://github.com/beyzarslann/AlmanUsuluProjesi",
           icon: <Icons.github className="size-3" />,
@@ -139,7 +147,7 @@ export const DATA = {
     },
     {
       title: "Rick and Morty Api",
-      href: "https://vercel.com/beyzarslanns-projects/rick-and-morty-api",
+      href: "https://rick-and-morty-app-byz.netlify.app/",
       dates: "",
       active: true,
       description:
@@ -148,7 +156,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://rick-and-morty-api-three-beta.vercel.app/",
+          href: "https://rick-and-morty-app-byz.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -161,8 +169,31 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Hava Durumu",
+      href: "https://theweathert.netlify.app/",
+      dates: "",
+      active: true,
+      description:
+        "Bu hava durumu uygulaması, JavaScript kullanılarak geliştirilmiş ve OpenWeatherMap API entegrasyonu yapılmış bir web uygulamasını temsil eder. Kullanıcıların seçtikleri şehirler için güncel hava durumu bilgilerini görüntülemelerine olanak tanır. Uygulama, hava durumu bilgilerini API üzerinden çeker ve kullanıcıya sunar.",
+      technologies: ["Html", "Css", "Javascript"],
+      links: [
+        {
+          type: "Website",
+          href: "https://theweathert.netlify.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/beyzarslann/TheWeather",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/havadurumu.JPG",
+      video: "",
+    },
+    {
       title: "Dunyanin Yedi Harikasi",
-      href: "https://dunyanin-yedi-harikasi.vercel.app/",
+      href: "https://dunyanin-yedi-harikasi.netlify.app/",
       dates: "",
       active: true,
       description: "Html ve Css ile kodlanmış bir websitesi.",
@@ -170,7 +201,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://dunyanin-yedi-harikasi.vercel.app/",
+          href: "https://dunyanin-yedi-harikasi.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
