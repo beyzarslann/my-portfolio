@@ -238,7 +238,11 @@ export default function Page() {
 
       <section id="contact" className="py-12">
         <div className="relative justify-center">
-          <a href="/cv.jpg" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/BEYZA_ARSLAN_CV.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ShimmerButton className="shadow-2xl">
               <div className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                 CV mi Görüntülemek İçin Tıkla !

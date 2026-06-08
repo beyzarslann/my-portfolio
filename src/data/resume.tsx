@@ -52,14 +52,14 @@ export const DATA = {
   },
   work: [
     {
-      company: "T.C. Cumhurbaşkanlığı İletişim Başkanlığı",
+      company: "AreonX ",
       badges: [],
-      title: "Stajyer Mühendis",
-      logoUrl: "/ib-logo.png",
-      start: "Temmuz 2022",
-      end: "Ağustos 2022",
+      title: "Front End Developer (Proje Bazlı)",
+      logoUrl: "/areonx-logo.png",
+      start: "Nisan 2026",
+      end: "Haziran 2026",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
     },
     {
       company: "PTT A.Ş",
@@ -70,6 +70,16 @@ export const DATA = {
       end: "Ağustos 2023",
       description:
         "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+    },
+    {
+      company: "T.C. Cumhurbaşkanlığı İletişim Başkanlığı",
+      badges: [],
+      title: "Stajyer Mühendis",
+      logoUrl: "/ib-logo.png",
+      start: "Temmuz 2022",
+      end: "Ağustos 2022",
+      description:
+        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
     },
   ],
   education: [
